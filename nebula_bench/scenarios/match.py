@@ -41,4 +41,3 @@ class Match2HopEdge(BaseMatchScenario):
 class Match3HopEdge(BaseMatchScenario):
     abstract = False
     nGQL = 'MATCH (v1:Person)-[e:KNOWS*3]->(v2:Person) WHERE id(v1) == {0} RETURN e.creationDate'
-    
